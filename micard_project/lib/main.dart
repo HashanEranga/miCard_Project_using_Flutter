@@ -10,46 +10,45 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.pinkAccent,
-              child: Center(
-                child: Text('Container 00'),
+        body: SafeArea(
+          child: Row(
+            children: <Widget>[
+              Container(
+                width: 100.0,
+                height: double.infinity,
+                color: Colors.red,
               ),
-            ),
-            SizedBox(width: 10.0),
-            Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.redAccent[700],
-              child: Center(
-                child: Text('Container 01'),
+              SizedBox(
+                width: 100.0,
               ),
-            ),
-            SizedBox(width: 10.0),
-            Container(
-              width: 100.0,
-              height: 100.0,
-              color: Colors.amber[700],
-              child: Center(
-                child: Text('Container 02'),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.amber,
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.lightGreen,
+                  )
+                ],
               ),
-            ),
-            SizedBox(width: 10.0),
-            Container(
-              width: 100.0,
-              height: 200.0,
-              color: Colors.amber[700],
-              child: Center(
-                child: Text('Container 03'),
+              SizedBox(
+                width: 100.0,
               ),
-            ),
-          ],
+              Container(
+                width: 100.0,
+                height: double.infinity,
+                color: Colors.lightBlue,
+              ),
+            ],
+          ),
         ),
       ),
       debugShowCheckedModeBanner: false,
