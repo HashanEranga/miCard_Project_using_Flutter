@@ -9,19 +9,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blueGrey,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
-                radius: 50.0,
+                radius: 80.0,
                 backgroundImage: AssetImage('lib/images/hashan.png'),
               ),
               Text(
                 "Hashan Eranga",
                 style: TextStyle(
-                  fontFamily: "Pacifico",
+                  fontFamily: "Source Sans Pro",
                   fontSize: 30.0,
                   color: Colors.white,
                 ),
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
               Text(
                 "Mobile App Developer",
                 style: TextStyle(
-                  fontFamily: 'Source Sans Pro',
+                  fontFamily: 'Pacifico',
                   fontSize: 15.0,
                   color: Colors.white,
                   letterSpacing: 2.1,
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
               ),
               SizedBox(
                 height: 20.0,
-                width: 150.0,
+                width: 180.0,
                 child: Divider(
                   color: Colors.white,
                 ),
@@ -49,12 +49,12 @@ class MyApp extends StatelessWidget {
                     child: ListTile(
                       leading: Icon(
                         Icons.phone,
-                        color: Colors.teal,
+                        color: Colors.blueGrey,
                       ),
                       title: Text(
                         "+94785630194",
                         style: TextStyle(
-                          color: Colors.teal,
+                          color: Colors.blueGrey,
                           fontFamily: 'Source Sans Pro',
                           fontSize: 20.0,
                         ),
@@ -68,12 +68,12 @@ class MyApp extends StatelessWidget {
                   child: ListTile(
                     leading: Icon(
                       Icons.email,
-                      color: Colors.teal,
+                      color: Colors.blueGrey,
                     ),
                     title: Text(
                       "ccmrhe@gmail.com",
                       style: TextStyle(
-                        color: Colors.teal,
+                        color: Colors.blueGrey,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0,
                       ),
